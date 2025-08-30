@@ -43,6 +43,7 @@ document.body.addEventListener("click",(e)=>{
         case "randomColorsButton":
             randomise=true
             break
+        
         case "earaserButton":
             paintColor="white"
             randomise=false
@@ -52,6 +53,18 @@ document.body.addEventListener("click",(e)=>{
                 randomise=false
                 paintColor="black"
                 break
+
+        case "changeGridButton":
+
+            const gridSizeInput=document.querySelector(".changeGridInput").value
+            if(+gridSizeInput<=100 && +gridSizeInput>=1){
+                gridSize=gridSizeInput
+                destroyGrid()
+                createGrid()
+                }
+            break
+    }
+})
 
 
 
