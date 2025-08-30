@@ -1,7 +1,16 @@
 const container=document.querySelector(".container")
 let paintColor="black"
 gridSize=16 
+let randomise=false
 
+
+function destroyGrid(){
+    const lines=document.querySelectorAll(".line")
+    lines.forEach(ln => {
+        container.removeChild(ln)
+    })
+
+}
 
 
 
@@ -20,6 +29,16 @@ function createGrid(){
         container.appendChild(line)
     }
 }
+
+
+document.body.addEventListener("click",(e)=>{
+
+    switch(e.target.className){
+        case "resetButton":
+            document.querySelectorAll(".square").forEach(sq => {
+                sq.style.backgroundColor="white"
+            })
+            break
 
 
 
