@@ -43,7 +43,15 @@ document.body.addEventListener("click",(e)=>{
         case "randomColorsButton":
             randomise=true
             break
-        
+        case "earaserButton":
+            paintColor="white"
+            randomise=false
+            break
+
+        case "defaultColorButton":
+                randomise=false
+                paintColor="black"
+                break
 
 
 
