@@ -1,3 +1,10 @@
+const container=document.querySelector(".container")
+let paintColor="black"
+gridSize=16 
+
+
+
+
 function createGrid(){
     for( i=0;i<gridSize;i++){
 
@@ -13,5 +20,15 @@ function createGrid(){
         container.appendChild(line)
     }
 }
+
+
+
+
+container.addEventListener("mouseover",(e)=>{
+    
+    if(randomise)paintColor=`rgb(${Math.floor(Math.random() * 255) + 1},${Math.floor(Math.random() * 255) + 1},${Math.floor(Math.random() * 255) + 1})`
+    e.target.style.backgroundColor=paintColor
+})
+
 
 createGrid()
