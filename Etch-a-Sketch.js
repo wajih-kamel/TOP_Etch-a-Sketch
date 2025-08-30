@@ -39,6 +39,11 @@ document.body.addEventListener("click",(e)=>{
                 sq.style.backgroundColor="white"
             })
             break
+        
+        case "randomColorsButton":
+            randomise=true
+            break
+        
 
 
 
