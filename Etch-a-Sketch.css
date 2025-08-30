@@ -34,3 +34,26 @@ body {
   border: 1px solid rgb(0, 0, 0);
   flex: 1; 
 }
+.resetButton{
+    color: black;
+    min-width: 70px;
+    min-height: 40px;
+}
+
+.options,.changeGrid{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+button:hover{
+  background-color: rgb(254, 9, 172);
+  scale: 1.2;
+}
